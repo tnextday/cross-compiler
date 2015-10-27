@@ -1,5 +1,5 @@
-FROM steeve/cross-compiler:base
-MAINTAINER Steeve Morin "steeve.morin@gmail.com"
+FROM anteo/cross-compiler:base
+MAINTAINER Anton Argirov "anton.argirov@gmail.com"
 
 # Add the cross compiler sources
 RUN echo "deb     http://toolchains.secretsauce.net unstable main" >> /etc/apt/sources.list && \

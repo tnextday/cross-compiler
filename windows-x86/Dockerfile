@@ -1,5 +1,5 @@
-FROM steeve/cross-compiler:base
-MAINTAINER Steeve Morin "steeve.morin@gmail.com"
+FROM anteo/cross-compiler:base
+MAINTAINER Anton Argirov "anton.argirov@gmail.com"
 
 RUN apt-get update && apt-get -y install mingw-w64
 
