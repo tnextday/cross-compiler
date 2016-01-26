@@ -1,5 +1,5 @@
-FROM debian:wheezy
-MAINTAINER Steeve Morin "steeve.morin@gmail.com"
+FROM debian:jessie
+MAINTAINER dimitriss
 
 RUN apt-get update && apt-get -y install \
                         bash \

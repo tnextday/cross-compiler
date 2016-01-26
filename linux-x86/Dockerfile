@@ -1,5 +1,5 @@
-FROM anteo/cross-compiler:base
-MAINTAINER Anton Argirov "anton.argirov@gmail.com"
+FROM dimitriss/cross-compiler:base
+MAINTAINER dimitriss
 
 RUN apt-get update && apt-get -y install \
                         gcc-multilib \

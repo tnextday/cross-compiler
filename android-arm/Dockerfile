@@ -1,5 +1,5 @@
-FROM anteo/cross-compiler:base
-MAINTAINER Anton Argirov "anton.argirov@gmail.com"
+FROM dimitriss/cross-compiler:base
+MAINTAINER dimitriss
 
 RUN apt-get update && apt-get -y --force-yes install \
                         bash \
@@ -19,7 +19,7 @@ RUN mkdir -p /build && \
     curl -L http://dl.google.com/android/ndk/android-ndk-r10e-linux-x86_64.bin -o android-ndk-r10e-linux-x86_64.bin
 RUN cd /build && 7zr x android-ndk-r10e-linux-x86_64.bin
 RUN cd /build/android-ndk-r10e && \
-    /bin/bash ./build/tools/make-standalone-toolchain.sh --toolchain=arm-linux-androideabi-4.9 --platform=android-14 --install-dir=${CROSS_ROOT} && \
+    /bin/bash ./build/tools/make-standalone-toolchain.sh --toolchain=arm-linux-androideabi-4.9 --platform=android-19 --install-dir=${CROSS_ROOT} && \
     cd / && \
     rm -rf /build
 RUN cd ${CROSS_ROOT}/bin && \

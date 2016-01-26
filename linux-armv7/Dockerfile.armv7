@@ -2,9 +2,9 @@ FROM anteo/cross-compiler:base
 MAINTAINER Anton Argirov "anton.argirov@gmail.com"
 
 # Add the cross compiler sources
-RUN echo "deb     http://toolchains.secretsauce.net unstable main" >> /etc/apt/sources.list && \
+RUN echo "deb http://emdebian.org/tools/debian/ jessie main" >> /etc/apt/sources.list && \
     dpkg --add-architecture armhf && \
-    curl -L http://toolchains.secretsauce.net/key.gpg | apt-key add -
+    curl -L http://emdebian.org/tools/debian/emdebian-toolchain-archive.key | apt-key add -
 
 RUN apt-get update && apt-get -y install \
                         gcc-4.9-arm-linux-gnueabihf \

@@ -4,10 +4,11 @@ PLATFORMS = android-arm \
 			linux-x86 \
 			linux-x64 \
 			linux-arm \
+			linux-armv7 \
 			windows-x86 \
 			windows-x64
 DOCKER = docker
-IMAGE = anteo/cross-compiler
+IMAGE = dimitriss/cross-compiler
 
 .PHONY: $(PLATFORMS)
 

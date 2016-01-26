@@ -1,5 +1,5 @@
-FROM anteo/cross-compiler:base
-MAINTAINER Anton Argirov "anton.argirov@gmail.com"
+FROM dimitriss/cross-compiler:base
+MAINTAINER dimitriss
 
 ENV CROSS_TRIPLE x86_64-linux-gnu
 ENV CROSS_ROOT /usr/${CROSS_TRIPLE}
