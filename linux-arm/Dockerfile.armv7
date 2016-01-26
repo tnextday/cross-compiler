@@ -8,7 +8,8 @@ RUN echo "deb http://emdebian.org/tools/debian/ jessie main" >> /etc/apt/sources
 
 RUN apt-get update && apt-get -y install \
                         gcc-4.9-arm-linux-gnueabihf \
-                        g++-4.9-arm-linux-gnueabihf
+                        g++-4.9-arm-linux-gnueabihf \
+						crossbuild-essential-armhf
 
 ENV CROSS_TRIPLE arm-linux-gnueabihf
 ENV CROSS_ROOT /usr/${CROSS_TRIPLE}
