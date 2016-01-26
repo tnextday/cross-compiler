@@ -1,5 +1,5 @@
-FROM anteo/cross-compiler:base
-MAINTAINER Anton Argirov "anton.argirov@gmail.com"
+FROM dimitriss/cross-compiler:base
+MAINTAINER Dimitriss
 
 # Add the cross compiler sources
 RUN echo "deb http://emdebian.org/tools/debian/ jessie main" >> /etc/apt/sources.list && \
