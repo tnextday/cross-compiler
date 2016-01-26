@@ -1,10 +1,8 @@
 PLATFORMS = android-arm \
-            android-x86 \
 			darwin-x64 \
 			linux-x86 \
 			linux-x64 \
 			linux-arm \
-			linux-armv7 \
 			windows-x86 \
 			windows-x64
 DOCKER = docker
