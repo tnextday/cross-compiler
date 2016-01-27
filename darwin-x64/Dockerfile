@@ -1,5 +1,5 @@
 FROM dimitriss/cross-compiler:base
-MAINTAINER dimitriss
+MAINTAINER Dimitriss
 
 ENV CROSS_TRIPLE x86_64-apple-darwin14
 ENV CROSS_ROOT /usr/${CROSS_TRIPLE}
