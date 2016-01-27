@@ -1,6 +1,13 @@
-PLATFORMS = android-arm darwin-x64 linux-x86 linux-x64 linux-arm linux-armv7 windows-x86 windows-x64
+PLATFORMS = android-arm \
+            android-x86 \
+			darwin-x64 \
+			linux-x86 \
+			linux-x64 \
+			linux-arm \
+			windows-x86 \
+			windows-x64
 DOCKER    = docker
-IMAGE     = cross-compiler
+IMAGE     = dimitriss/cross-compiler
 
 base:
 	$(DOCKER) build -t $(IMAGE):base .
