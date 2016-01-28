@@ -1,5 +1,5 @@
 FROM dimitriss/cross-compiler:base
-MAINTAINER Dimitriss
+
 
 RUN apt-get update && apt-get -y install mingw-w64
 

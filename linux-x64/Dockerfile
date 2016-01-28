@@ -1,5 +1,4 @@
 FROM dimitriss/cross-compiler:base
-MAINTAINER Dimitriss
 
 ENV CROSS_TRIPLE x86_64-linux-gnu
 ENV CROSS_ROOT /usr/${CROSS_TRIPLE}

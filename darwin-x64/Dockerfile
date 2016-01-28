@@ -1,5 +1,12 @@
 FROM dimitriss/cross-compiler:base
-MAINTAINER Dimitriss
+
+RUN apt-get update && apt-get -y --force-yes install \
+                        bash \
+                        curl wget \
+                        pkg-config \
+                        build-essential \
+                        file \
+                        tar xz-utils bzip2 gzip sed
 
 ENV CROSS_TRIPLE x86_64-apple-darwin14
 ENV CROSS_ROOT /usr/${CROSS_TRIPLE}
