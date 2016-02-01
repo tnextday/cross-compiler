@@ -1,5 +1,5 @@
-cross-compilers
-===============
+cross-compiler
+==============
 
 Dockerfiles for cross compiling environments (Jessie)
 
