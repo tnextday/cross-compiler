@@ -16,7 +16,7 @@ ENV PKG_CONFIG_PATH ${CROSS_ROOT}/lib/pkgconfig:${PKG_CONFIG_PATH}
 ENV MAC_SDK_VERSION 10.10
 
 RUN echo "deb http://llvm.org/apt/jessie/ llvm-toolchain-jessie-3.7 main" >> /etc/apt/sources.list && \
-    curl http://llvm.org/apt/llvm-snapshot.gpg.key | apt-key add - && \
+    wget --no-check-certificate -q -O - http://llvm.org/apt/llvm-snapshot.gpg.key | apt-key add - && \
     apt-get update && \
     apt-get install -y --force-yes clang-3.7 llvm-3.7-dev automake autogen \
                                    libtool libxml2-dev uuid-dev libssl-dev bash \
