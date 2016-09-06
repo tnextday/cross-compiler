@@ -5,7 +5,8 @@ RUN apt-get update && apt-get -y install \
     curl wget \
     pkg-config build-essential make automake autogen \
     libpcre3-dev bison yodl \
-    tar xz-utils bzip2 gzip \
+    tar xz-utils bzip2 gzip unzip\
     file \
     rsync \
-    sed
+    sed \
+    git
